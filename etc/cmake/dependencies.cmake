@@ -16,12 +16,12 @@ macro(find_dependencies)
   set(OPTIONAL_DEPENDENCIES GLPK OpenMP)
 
   # Declare configuration options for dependencies
-  tristate(IGRAPH_USE_INTERNAL_GMP "Compile igraph with internal Mini-GMP" AUTO)
-  tristate(IGRAPH_USE_INTERNAL_ARPACK "Compile igraph with internal ARPACK" AUTO)
-  tristate(IGRAPH_USE_INTERNAL_BLAS "Compile igraph with internal BLAS" AUTO)
-  tristate(IGRAPH_USE_INTERNAL_GLPK "Compile igraph with internal GLPK" AUTO)
-  tristate(IGRAPH_USE_INTERNAL_LAPACK "Compile igraph with internal LAPACK" AUTO)
-  tristate(IGRAPH_USE_INTERNAL_PLFIT "Compile igraph with internal plfit" AUTO)
+  tristate(IGRAPH_USE_INTERNAL_GMP "Compile igraph with internal Mini-GMP" ON)
+  tristate(IGRAPH_USE_INTERNAL_ARPACK "Compile igraph with internal ARPACK" ON)
+  tristate(IGRAPH_USE_INTERNAL_BLAS "Compile igraph with internal BLAS" ON)
+  tristate(IGRAPH_USE_INTERNAL_GLPK "Compile igraph with internal GLPK" ON)
+  tristate(IGRAPH_USE_INTERNAL_LAPACK "Compile igraph with internal LAPACK" ON)
+  tristate(IGRAPH_USE_INTERNAL_PLFIT "Compile igraph with internal plfit" ON)
 
   # Declare dependencies
   set(REQUIRED_DEPENDENCIES "")
